@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\C# Scripts\GM.cs">
+    <Files>
+      <File FileName="Assets\C# Scripts\GM.cs" Line="18" Column="2" />
+      <File FileName="Assets\C# Scripts\Player_Movement.cs" Line="23" Column="3" />
+      <File FileName="Assets\C# Scripts\Camera_Move_Zone.cs" Line="24" Column="78" />
+      <File FileName="Assets\C# Scripts\Death_Pit.cs" Line="7" Column="5" />
+      <File FileName="Assets\C# Scripts\Break_Block.cs" Line="17" Column="1" />
+      <File FileName="Assets\C# Scripts\Question_Block.cs" Line="10" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
