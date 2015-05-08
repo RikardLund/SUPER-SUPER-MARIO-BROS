@@ -39,22 +39,25 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>D:/Not Games/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>X:/Not Games/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>D:/Not Games/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>X:/Not Games/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\C# Scripts\Break_Block.cs" />
      <Compile Include="Assets\C# Scripts\Camera_Move_Zone.cs" />
+     <Compile Include="Assets\C# Scripts\Choose_Player_Num.cs" />
      <Compile Include="Assets\C# Scripts\Death_Pit.cs" />
      <Compile Include="Assets\C# Scripts\GM.cs" />
+     <Compile Include="Assets\C# Scripts\Game_Over.cs" />
      <Compile Include="Assets\C# Scripts\Player_Movement.cs" />
      <Compile Include="Assets\C# Scripts\Question_Block.cs" />
-     <Compile Include="Assets\C# Scripts\TitleScreen.cs" />
+     <Compile Include="Assets\C# Scripts\Start_Level.cs" />
+     <Compile Include="Assets\C# Scripts\Title_Screen.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Not Games/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
+ <HintPath>X:/Not Games/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
