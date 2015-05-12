@@ -7,6 +7,12 @@ TextureImporter:
     21300004: HUD_Coin_2
     21300006: small_mush
     21300008: no_mush
+    21300010: brick_break_45
+    21300012: brick_break_135
+    21300014: 52569_0
+    21300016: 52569_1
+    21300018: 52569_2
+    21300020: 52569_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -95,6 +101,46 @@ TextureImporter:
         y: 168
         width: 8
         height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 52569_0
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 224
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 52569_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 224
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 52569_2
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 224
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 52569_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 224
+        width: 10
+        height: 14
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

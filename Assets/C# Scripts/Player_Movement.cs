@@ -6,22 +6,35 @@ public class Player_Movement : MonoBehaviour {
 
 	public float Speed = 10.0f;
 	public float JumpSpeed = 0.5f;
+
 	public LayerMask GroundLayers;
+
 	public AudioClip m_jump1;
+	public AudioClip pipe;
 
 	private Animator m_Animator;
 	private Transform m_Groundcheck1;
 	private Transform m_Groundcheck2;
 
-	void Start () {
+	public int hasExited;
+
+	public bool paused = false;
+
+	void Start() {
+		hasExited = PlayerPrefs.GetInt ("exitedPipe");
 		m_Animator = GetComponent<Animator> ();
 		m_Groundcheck1 = transform.FindChild ("GroundCheck1");
 		m_Groundcheck2 = transform.FindChild ("GroundCheck2");
+
+		if (hasExited > 0) {
+			this.gameObject.transform.position = new Vector3 (164, 3, 0);
+			AudioSource.PlayClipAtPoint (pipe, transform.position);
+		}
 	}
 
-	void Update () {
-
+	void Update() {
 		bool isCrouching = false;
+
 		if (Input.GetKey (KeyCode.S)) {
 			isCrouching = true;
 		}
@@ -34,7 +47,7 @@ public class Player_Movement : MonoBehaviour {
 			isGrounded2 = true;
 		}
 
-		if (Input.GetButtonDown ("Jump")) {
+		if (Input.GetButtonDown ("Jump") && paused != true) {
 
 			if (isGrounded1 || isGrounded2) {
 				AudioSource.PlayClipAtPoint (m_jump1, transform.position);
@@ -59,5 +72,17 @@ public class Player_Movement : MonoBehaviour {
 		}
 
 		this.rigidbody2D.velocity = new Vector2(hSpeed * Speed, this.rigidbody2D.velocity.y);
+
+		if (Input.GetKey (KeyCode.Escape)) {
+			Application.LoadLevel ("Title Screen");
+		}
+		if (Input.GetKeyDown (KeyCode.P) && paused != true) {
+			paused = true;
+			Time.timeScale = 0.0f;
+		}
+		else if (Input.GetKeyDown (KeyCode.P) && paused == true) {
+			paused = false;
+			Time.timeScale = 1.0f;
+		}
 	}
 }

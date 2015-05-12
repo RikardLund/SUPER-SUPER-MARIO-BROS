@@ -5,6 +5,9 @@ using System.Collections;
 public class Choose_Player_Num : MonoBehaviour {
 	
 	private Animator m_Animator;
+
+	int lives = 3;
+
 	bool mushShow = false;
 
 	void Start () {
@@ -13,6 +16,7 @@ public class Choose_Player_Num : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetKey (KeyCode.Return) && mushShow == false || Input.GetKey (KeyCode.Space) && mushShow == false){
+			PlayerPrefs.SetInt("currentLives", lives);
 			Application.LoadLevel ("Start Level"); //1 player game start
 		}
 		if (Input.GetKeyDown (KeyCode.Return) && mushShow == true || Input.GetKey (KeyCode.Space) && mushShow == true){

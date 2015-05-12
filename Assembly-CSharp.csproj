@@ -49,7 +49,11 @@
      <Compile Include="Assets\C# Scripts\Break_Block.cs" />
      <Compile Include="Assets\C# Scripts\Camera_Move_Zone.cs" />
      <Compile Include="Assets\C# Scripts\Choose_Player_Num.cs" />
+     <Compile Include="Assets\C# Scripts\Coins.cs" />
      <Compile Include="Assets\C# Scripts\Death_Pit.cs" />
+     <Compile Include="Assets\C# Scripts\Enter_Pipe.cs" />
+     <Compile Include="Assets\C# Scripts\Exit_Pipe.cs" />
+     <Compile Include="Assets\C# Scripts\Flag_Pole.cs" />
      <Compile Include="Assets\C# Scripts\GM.cs" />
      <Compile Include="Assets\C# Scripts\Game_Over.cs" />
      <Compile Include="Assets\C# Scripts\Player_Movement.cs" />
