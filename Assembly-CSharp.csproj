@@ -56,6 +56,8 @@
      <Compile Include="Assets\C# Scripts\Flag_Pole.cs" />
      <Compile Include="Assets\C# Scripts\GM.cs" />
      <Compile Include="Assets\C# Scripts\Game_Over.cs" />
+     <Compile Include="Assets\C# Scripts\Goomba.cs" />
+     <Compile Include="Assets\C# Scripts\Kill_Box.cs" />
      <Compile Include="Assets\C# Scripts\Player_Movement.cs" />
      <Compile Include="Assets\C# Scripts\Question_Block.cs" />
      <Compile Include="Assets\C# Scripts\Start_Level.cs" />

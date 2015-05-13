@@ -30,6 +30,7 @@ TextureImporter:
     21300050: Flag_Pole_Top
     21300052: question_block2
     21300054: question_block3
+    21300056: question_block4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -346,6 +347,16 @@ TextureImporter:
         serializedVersion: 2
         x: 120
         y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question_block4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 222
         width: 16
         height: 16
       alignment: 0

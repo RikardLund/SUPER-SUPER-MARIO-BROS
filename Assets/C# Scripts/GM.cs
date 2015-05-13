@@ -100,16 +100,25 @@ public class GM : MonoBehaviour {
 	void toTitleScreen() {
 		Application.LoadLevel ("Title Screen");
 	}
+	public void coinQuestionBlock() {
+		points += 200;
+		coins++;
+		PlayerPrefs.SetInt ("currentPoints", points);
+		canPoints.text = "" + points.ToString("D6");
+		PlayerPrefs.SetInt ("currentCoins", coins);
+		canCoin.text = "" + coins.ToString("D2");
+	}
+
+	public void destroyGoomba() {
+		points += 100;
+		PlayerPrefs.SetInt ("currentPoints", points);
+		canPoints.text = "" + points.ToString("D6");
+	}
 
 	public void destroyBrick() {
 		points += 50;
+		PlayerPrefs.SetInt ("currentPoints", points);
 		canPoints.text = "" + points.ToString("D6");
-	}
-	
-	public void noTime() {
-		if (timeOver == true) {
-			death();
-		}
 	}
 
 	public void playFastMusic() {
@@ -145,7 +154,7 @@ public class GM : MonoBehaviour {
 		if (timeLeft <= 0f) {
 			timeLeft = 0f;
 			timeOver = true;
+			death();
 		}
 	}
 }
-
